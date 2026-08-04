@@ -8,26 +8,26 @@
 </head>
 <body class="bg-[#191326] overflow-x-hidden font-[lalezar]">
     <!-- Navigation bar -->
-    <nav class="bg-[#262874] h-16 ">
+    <nav class="bg-[#262874] h-16 w-full flex items-center justify-center">
         <ul class="flex text-white gap-10 justify-center items-center ">
-            <li class="bg-[#1D0707]  "><a href="#">logo</a></li>
-            <li class="bg-[#1D0707]"><a href="#">Home</a></li>
-            <li class="bg-[#1D0707] "><a href="#">Services</a></li>
-            <li class="bg-[#1D0707] "><a href="#">Skills</a></li>
-            <li class="bg-[#1D0707] "><a href="#">Contact</a></li>
-            <li class="bg-[#1D0707] "><a href="#">Download CV</a></li>
-            <li class="bg-[#1D0707]"><img src="/images/menu (1).svg" class="h-10 w-18" alt="Menu"></li>
+            <li class="bg-[#1D0707] w-15 h-8 pl-3 pt-1  hidden lg:block "><a href="#">logo</a></li>
+            <li class="bg-[#1D0707] hidden  w-15 h-8 pl-1 pt-1 lg:block"><a href="#">Home</a></li>
+            <li class="bg-[#1D0707] hidden  w-15 h-8 pl-1 pt-1 lg:block"><a href="#">Services</a></li>
+            <li class="bg-[#1D0707] hidden  w-25 h-8 pl-1 pt-1 lg:block"><a href="#">Skills</a></li>
+            <li class="bg-[#1D0707] hidden  w-15 h-8 pl-1 pt-1 lg:block"><a href="#">Contact</a></li>
+            <li class="bg-[#1D0707] hidden  w-35 h-8 pl-1 pt-1 lg:block"><a href="#">Download CV</a></li>
+            <li class="bg-[#1D0707] lg:hidden "><img src="/images/menu (1).svg" class="h-10 w-18" alt="Menu"></li>
             
         </ul>
     </nav>
     <!--1ere section-->
-    <section>
-        <div class="flex">
-            <div class="bg-[url('/images/profil.jfif')] bg-cover bg-center bg-no-repeat w-40 h-40 ml-8 mt-10 rounded-all"> </div>
-            <div class="flex-col ml-50 mt-10 text-white">
-                <h1>HELLO, I’m Sylvain TALLA an apprentice <br> web and App Developper </h1>
+    <section class="overflow-x-scroll">
+        <div class="flex lg:gap-40">
+            <div class="shrink-0 bg-[url('/images/profil.jfif')] bg-cover bg-center bg-no-repeat w-40 h-40 ml-8 mt-10 rounded-all object-cover"> </div>
+            <div class="flex-col   ml-30 mt-10 shrink-0 text-white">
+                <div class="shrink-0 ">HELLO, I’m Sylvain TALLA an apprentice <br> web and App Developper </div>
                 <button class="mt-5 bg-[#262874]">Contact me</button>
-                <div class="flex gap-30 mt-20">
+                <div class="flex gap-20 mt-20">
                     <div class="bg-[url('/images/ig.png')] bg-cover bg-center bg-no-repeat w-5 h-5"></div>
                     <div class="bg-[url('/images/facebook.png')] bg-cover bg-center bg-no-repeat w-5 h-5"></div>
                     <div class="bg-[url('/images/linkedin.png')] bg-cover bg-center bg-no-repeat w-5 h-5"></div>
@@ -37,7 +37,7 @@
                 
             </div>
         </div>
-        <div class="w-200 h-20 bg-[#262874] mt-15 ml-15 justify-center">
+        <div class="w-200 h-20 bg-[#262874] mt-15 ml-15 justify-center shrink-0">
             <ul class="text-white flex gap-30">
                 <li> 02+ <br> months of experience</li>
                 <li> 03+ <br> Solo projects completed</li>
@@ -51,9 +51,9 @@
     <!--fin 1ere section-->
 
     <!--2eme section-->
-    <section class="mt-5">
-        <div class="text-white flex justify-center ">ABOUT ME</div>
-        <div class="bg-[#262874]  text-white ml-8 mt-18 flex justify-center items-center">
+    <section class="mt-5 md:overflow-x-visible">
+        <div class="text-white flex justify-center  ">ABOUT ME</div>
+        <div class="bg-[#262874] shrink-0 text-white ml-8 mt-18 flex justify-center items-center  ">
             i’m a  3rd years student at the National Advanced School of Engineering of <br> Yaounde. <br> Lorem ipsum manitum borum itim rcecta tuipo <br> nastun byres gastym niured tyuim liom ploit bertum  
         </div>
         <hr class="mt-8 bg-white">
@@ -64,7 +64,7 @@
         <div class="text-white flex justify-center ">SERVICES</div>
         <div class="text-white flex justify-center bg-[#262874] mt-7">My services are globally :</div>
         <div class="flex mt-25 justify-center">
-            <div class="bg-[#262874] flex justify-center items-center">
+            <div class="bg-[#262874] shrink-0 flex justify-center items-center">
                 <ul class="text-white">
                     <li>-Design of web sites  and  Apps</li>
                     <li>-Developpement of web sites and Apps</li>
@@ -89,14 +89,23 @@
             </div>
             <div class="bg-[url('/images/icon.jfif')] bg-cover bg-center bg-no-repeat w-30 h-30 "></div>
         </div>
-        <div class="flex justify-center mt-20 gap-10">
-            <div class="bg-[url('/images/HTML.jfif')] bg-no-repeat bg-center bg-cover w-40 h-30"></div>
-            <div class="bg-[url('/images/tailwind.jfif')] bg-no-repeat bg-center bg-cover w-40 h-30"></div>
-            <div class="bg-[url('/images/css.jfif')] bg-no-repeat bg-center bg-cover w-40 h-30"></div>
-            <div class="bg-[url('/images/website.jfif')] bg-no-repeat bg-center bg-cover w-40 h-30"></div>
+        <div class="flex justify-center mt-20 gap-10 md:overflow-x-scroll max-md:flex-col ">
+            <div class="flex gap-10">
+                <div class=" shrink-0 bg-[url('/images/HTML.jfif')] bg-no-repeat bg-center bg-cover w-40 h-30"></div>
+                <div class=" shrink-0 bg-[url('/images/tailwind.jfif')] bg-no-repeat bg-center bg-cover w-40 h-30"></div>
+
+            </div>
+            <div class="flex gap-10 ">
+                <div class=" shrink-0 bg-[url('/images/css.jfif')] bg-no-repeat bg-center bg-cover w-40 h-30"></div>
+                <div class=" shrink-0 bg-[url('/images/website.jfif')] bg-no-repeat bg-center bg-cover w-40 h-30"></div>
+
+            </div>
+            
+            
         </div>
 
     </section>
+    <!--fin-->
 
     
     
